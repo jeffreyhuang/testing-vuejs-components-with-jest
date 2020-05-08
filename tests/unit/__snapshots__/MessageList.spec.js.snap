@@ -2,8 +2,16 @@
 
 exports[`MessageList.vue has the expected html structure 1`] = `
 <ul>
-  <message-stub
-    message="Cat"
-  />
+  <li
+    class="message"
+    data-test="test-message"
+    style="margin-top: 10px;"
+  >
+    <span>
+      
+    Cat
+  
+    </span>
+  </li>
 </ul>
 `;
