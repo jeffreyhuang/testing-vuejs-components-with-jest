@@ -1,18 +1,18 @@
-import { mount } from '@vue/test-utils'
+import { shallowMount } from '@vue/test-utils'
 import MessageList from '@/components/MessageList'
 
 describe('MessageList.vue', () => {
   let wrapper
 
   beforeEach(() => {
-    wrapper = mount(MessageList, {
+    wrapper = shallowMount(MessageList, {
       propsData: {
         messages: ['Cat']
       }
     })
   })
 
-  it('has received [\'Cat\'] as the message property', () => {
+  it("has received ['Cat'] as the message property", () => {
     expect(wrapper.vm.messages).toEqual(['Cat'])
   })
 
