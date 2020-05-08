@@ -1,5 +1,13 @@
 <template>
-  <li class="message">{{ message }}</li>
+  <li
+    style="margin-top: 10px"
+    class="message"
+    data-test="test-message"
+  >
+    <span>
+      {{ message }}
+    </span>
+  </li>
 </template>
 
 <script>
