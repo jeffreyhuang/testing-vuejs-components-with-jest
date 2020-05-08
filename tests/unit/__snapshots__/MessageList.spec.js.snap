@@ -2,10 +2,8 @@
 
 exports[`MessageList.vue has the expected html structure 1`] = `
 <ul>
-  <li>
-    
-    Cat
-  
-  </li>
+  <message-stub
+    message="Cat"
+  />
 </ul>
 `;
